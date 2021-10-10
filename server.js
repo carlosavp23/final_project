@@ -71,7 +71,11 @@ app.get("/addItem", (request, response) => {
 });
 
 app.get("/home", (request, response) => {
+<<<<<<< Updated upstream
   response.sendFile(__dirname + "/views/home.html");
+=======
+  response.render("home", {username: username});
+>>>>>>> Stashed changes
 });
 
 app.get("/listView", (request, response) => {
